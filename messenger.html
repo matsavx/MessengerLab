@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Messenger</title>
+    <link rel = "stylesheet" href="src/styles.css">
+    <link rel = "shortcut icon" href="src/images/icon.png">
+</head>
+<body>
+    <header>
+        <img src="src/images/msgIcon.png" width="85" height="50" alt="">
+        <span>M e s s e n g e r </span>
+    </header>
+
+    <article>
+        <div class  = "peopleList">
+            <input id="Tanya" type="radio" name="radio" value="0">
+            <label for="Tanya" class="PressedHuman">
+                <div class="avatar">
+                    <img src="src/images/tanya.jpg" alt="">
+                </div>
+                <span class="PeopleNames">Татьяна Кичигина</span>
+            </label>
+            <input id="Slava" type="radio" name="radio" value="1">
+            <label for="Slava" class="PressedHuman">
+                <div class="avatar">
+                    <img class="avatar" src="src/images/slava.jpg" alt="">
+                </div>
+                <span class="PeopleNames">Вячеслав Лебедев</span>
+            </label>
+            <input id="Misha" type="radio" name="radio" value="2">
+            <label for="Misha" class="PressedHuman">
+                <div class="avatar">
+                    <img class="avatar" src="src/images/misha.jpg" alt="">
+                </div>
+                <span class="PeopleNames">Михаил Зыков</span>
+            </label>
+        </div>
+
+        <div class = "messages">
+            <div id="content">
+
+            </div>
+            <div class = "message-input">
+                <label for="message-text"></label>
+                <input id="message-text" type = "text" name="message-text" placeholder="Введите текст">
+            </div>
+            <div class="message-buttons">
+                <button type="submit" id="send">Отправить</button>
+                <button type="submit" id="delete">Очистить</button>
+            </div>
+        </div>
+    </article>
+
+    <script src = "src/scripts.js"></script>
+</body>
+</html>
